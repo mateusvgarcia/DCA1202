@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  gcc:
+    image: 'gcc:latest'
+    container_name: 'compilador gcc'
+    volumes:
+      - './prova:/home/gcc/prova'
+    stdin_open: true
+    tty: true
+    working_dir: '/home/gcc/prova'
+    # entrypoint: ['gcc', '-o', 'q2', 'q2.c']
+    # command: ['./q2']
