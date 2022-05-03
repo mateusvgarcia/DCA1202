@@ -3,16 +3,18 @@ int *p, *q;
 p = &i;
 q = &j;
 
-Determine o valor das seguintes expressões:
+#### Determine o valor das seguintes expressões:
+
 p == &i;
-*p - *q;
-**&p;
-3 - *p/(*q) + 7;
+*p - *q; \**&p;
+3 - *p/(\*q) + 7;
 
-p == &i -> __Verdadeiro__
+#### Respostas
 
-*p - *q  => __3 - 5 => -2__
+> p == &i -> **Verdadeiro**
 
-**&p  => __3__
+> *p - *q => **3 - 5 => -2**
 
-3 - (*p/(*q)) + 7 => __3 - 0 + 7 => 10__
+> \*\*&p => **3**
+
+> 3 - (*p/(*q)) + 7 => **3 - 0 + 7 => 10**
